@@ -7,7 +7,9 @@
 //
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
+
 void OneQ(){
     int g,money;
     string y;
@@ -51,14 +53,67 @@ void TwoQ(){
 }
 
 
+void ThreeQ(){
+    double x,y=0;
+    cin >> x;
+    if (x < 5 && x >= 0){
+        y = -x + 2.5;
+    }
+    else if (x < 10 && x >=5){
+        y = 2-1.5*(x-3)*(x-3);
+    }
+    else if (x >= 10 && x < 20){
+        y = x/2-1.5;
+    }
+    else{
+        cout << "不在范围";
+    }
+    printf("%.3f",y);
+    cout << endl;
+}
 
 
+void FourQ(){
+    int electric = 0;
+    float q;
+    cin >> electric;
+    if (electric <= 150){
+        q = 0.4463*electric;
+    }
+    else if (electric <= 400){
+        q = 0.4463*150+0.4663*(electric - 150);
+    }
+    else{
+        q = 0.4463*150+0.4665*250+0.5663*(electric - 400);
+    }
+    printf("%.1f",q);
+    cout << endl;
+}
 
+void FiveQ(){
+    float a=1,b=2,c=8,temp;
+    float x1,x2;
 
-
-
-
-
+    cin >> a >> b >> c;
+    temp = b*b-4.*a*c;
+    if(temp<0){
+        temp = -sqrt(-temp);
+    }else{
+        temp = sqrt(temp);
+    }
+    x1 = (-b+temp)/(2.*a);
+    x2 = (-b-temp)/(2.*a);
+    if (b*b==4*a*c){
+        printf("x1=x2 %.5f=%.5f\n",x1,x2);
+    }
+    else if (b*b>4*a*c){
+        printf("x1=%.5f=x2=%.5f\n",x1,x2);
+}
+    else{
+        float a2 = a*2;
+        printf("x1=%.5f+%.5fi; x2=%.5f+%.5fi\n",-b/a2,temp/a2,-b/a2,temp/a2);
+}
+}
 
 
 
@@ -68,6 +123,8 @@ void TwoQ(){
 //---------------------------------------
 int main() {
     //OneQ();
-    TwoQ();
-    return 0;
+    //TwoQ();
+    //ThreeQ();
+    //FourQ();
+    FiveQ();
 }
