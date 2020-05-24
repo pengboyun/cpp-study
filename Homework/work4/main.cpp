@@ -68,8 +68,7 @@ void ThreeQ(){
     else{
         cout << "不在范围";
     }
-    printf("%.3f",y);
-    cout << endl;
+    printf("%.3f\n",y);
 }
 
 
@@ -86,9 +85,9 @@ void FourQ(){
     else{
         q = 0.4463*150+0.4665*250+0.5663*(electric - 400);
     }
-    printf("%.1f",q);
-    cout << endl;
+    printf("%.1f\n",q);
 }
+
 
 void FiveQ(){
     float a=1,b=2,c=8,temp;
