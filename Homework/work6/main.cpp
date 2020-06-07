@@ -31,14 +31,13 @@ void TwoQ(){
     cin>>N;
     while (N != 1){
         if (N%2!=0){
-                m=N*3+1;
-                printf("%d%s%d",N,"*3+1=",m);
-                N=m;
+            m=N*3+1;
+            printf("%d%s%d",N,"*3+1=",m);
             }
-            if (N%2==0){
-                m=N/2;
-                printf("%d%s%d",N,"/2=",m);
-                N=m;
+        else{
+            m=N/2;
+            printf("%d%s%d",N,"/2=",m);
+            N=m;
             }
     }
     printf("%s\n","end");
