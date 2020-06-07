@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  work4
+//  work6
 //
-//  Created by 彭博云 on 2020/5/23.
+//  Created by 彭博云 on 2020/6/7.
 //  Copyright © 2020 彭博云. All rights reserved.
 //
 #include <iostream>
@@ -14,8 +14,7 @@ void OneQ(){
     int num,n1,a=1,big=0,small=10000;
     double b=0.;
     cin >> num;
-    while (a <= num) {
-        a++;
+    while (a++ <= num) {
         cin >> n1;
         b = n1 + b;
         if (big < n1)
@@ -62,10 +61,9 @@ void FourQ(){
     cin >> h;
     total = h;
     int i = 1;
-    while(i < 10) {
+    while(i++ < 10) {
         h /= 2;
         total += 2 * h;
-        i++;
     }
     printf("%f\n%f\n",total,h / 2);
 }
