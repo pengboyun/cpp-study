@@ -32,11 +32,12 @@ void TwoQ(){
     while (N != 1){
         if (N%2!=0){
             m=N*3+1;
-            printf("%d%s%d",N,"*3+1=",m);
+            printf("%d%s%d\n",N,"*3+1=",m);
+            N = m;
             }
         else{
             m=N/2;
-            printf("%d%s%d",N,"/2=",m);
+            printf("%d%s%d\n",N,"/2=",m);
             N=m;
             }
     }
@@ -82,8 +83,8 @@ void FiveQ(){
 //---------------------------------------
 int main() {
     //OneQ();
-    //TwoQ();
+    TwoQ();
     //ThreeQ();
     //FourQ();
-    FiveQ();
+    //FiveQ();
 }
