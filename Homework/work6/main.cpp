@@ -51,7 +51,7 @@ void ThreeQ(){
     cin >> len;
     while (blong < len) {
         blong = blong + ci;
-        ci = ci * 0.98;
+        ci *= 0.98;
         bushu++;
     }
     printf("%d\n",bushu);
@@ -63,7 +63,7 @@ void FourQ(){
     total = h;
     int i = 1;
     while(i < 10) {
-        h = h / 2;
+        h /= 2;
         total = total + 2 * h;
         i++;
     }
@@ -75,8 +75,7 @@ void FiveQ(){
     cin >> day;
     while (day-- > 0) {
         all = all + money;
-        n++;
-        if (n == money){
+        if (++n == money){
             money = money + 1;
             n = 0;
         }
