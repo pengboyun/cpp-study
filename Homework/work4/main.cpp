@@ -59,7 +59,7 @@ void ThreeQ(){
     if (x < 5 && x >= 0){
         y = -x + 2.5;
     }
-    else if (x < 10 && x >=5){
+    else if (x < 10 &&x >=5){
         y = 2-1.5*(x-3)*(x-3);
     }
     else if (x >= 10 && x < 20){

@@ -39,6 +39,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1F42AA62248B6BC400705A0E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		1F95601B24642C25004B956A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,6 +65,7 @@
 		1F3E2CD42465887D00C4062F /* No2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = No2; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3E2CE2246588F900C4062F /* Class1No2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Class1No2; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3E2CE4246588F900C4062F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1F42AA64248B6BC400705A0E /* game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = game; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F95601D24642C25004B956A /* Self_Aught */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Self_Aught; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,6 +85,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F3E2CDF246588F900C4062F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F42AA61248B6BC400705A0E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,6 +140,7 @@
 				1F3E2CC92465867800C4062F /* Class1No1 */,
 				1F3E2CD42465887D00C4062F /* No2 */,
 				1F3E2CE2246588F900C4062F /* Class1No2 */,
+				1F42AA64248B6BC400705A0E /* game */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +199,23 @@
 			productReference = 1F3E2CE2246588F900C4062F /* Class1No2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		1F42AA63248B6BC400705A0E /* game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F42AA6A248B6BC400705A0E /* Build configuration list for PBXNativeTarget "game" */;
+			buildPhases = (
+				1F42AA60248B6BC400705A0E /* Sources */,
+				1F42AA61248B6BC400705A0E /* Frameworks */,
+				1F42AA62248B6BC400705A0E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = game;
+			productName = game;
+			productReference = 1F42AA64248B6BC400705A0E /* game */;
+			productType = "com.apple.product-type.tool";
+		};
 		1F95601C24642C25004B956A /* Self_Aught */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F95602424642C25004B956A /* Build configuration list for PBXNativeTarget "Self_Aught" */;
@@ -216,6 +251,9 @@
 					1F3E2CE1246588F900C4062F = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					1F42AA63248B6BC400705A0E = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					1F95601C24642C25004B956A = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -238,6 +276,7 @@
 				1F3E2CC82465867800C4062F /* Class1No1 */,
 				1F3E2CD32465887D00C4062F /* No2 */,
 				1F3E2CE1246588F900C4062F /* Class1No2 */,
+				1F42AA63248B6BC400705A0E /* game */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F3E2CE5246588F900C4062F /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F42AA60248B6BC400705A0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +363,22 @@
 			name = Debug;
 		};
 		1F3E2CE8246588F900C4062F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F42AA68248B6BC400705A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F42AA69248B6BC400705A0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -475,6 +537,15 @@
 			buildConfigurations = (
 				1F3E2CE7246588F900C4062F /* Debug */,
 				1F3E2CE8246588F900C4062F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F42AA6A248B6BC400705A0E /* Build configuration list for PBXNativeTarget "game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F42AA68248B6BC400705A0E /* Debug */,
+				1F42AA69248B6BC400705A0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
