@@ -53,9 +53,9 @@ void ThreeQ(){
 void FourQ(){
     int m,n,a = 0;
     cin >> m >> n;
-    for (int i = m; i <= n; i++) {
-        if(i % 3 == 0 && i % 5 == 0 && i % 7 == 0){
-            cout << i << " ";
+    for (; m <= n; m++) {
+        if(m % 3 == 0 && m % 5 == 0 && m % 7 == 0){
+            cout << m << " ";
             a = 1;
         }
     }
