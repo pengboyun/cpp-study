@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1F3E2CCC2465867800C4062F /* mian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E2CCB2465867800C4062F /* mian.cpp */; };
 		1F3E2CE5246588F900C4062F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3E2CE4246588F900C4062F /* main.cpp */; };
+		1FFA5C142494A9B80084EDA3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA5C132494A9B80084EDA3 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1FFA5C0F2494A9B80084EDA3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +77,8 @@
 		1F3E2CE4246588F900C4062F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F42AA64248B6BC400705A0E /* game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = game; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F95601D24642C25004B956A /* Self_Aught */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Self_Aught; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFA5C112494A9B80084EDA3 /* Typing Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Typing Game"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFA5C132494A9B80084EDA3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1FFA5C0E2494A9B80084EDA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -129,6 +148,7 @@
 			children = (
 				1F3E2CCA2465867800C4062F /* Class1No1 */,
 				1F3E2CE3246588F900C4062F /* Class1No2 */,
+				1FFA5C122494A9B80084EDA3 /* Typing Game */,
 				1F95601E24642C25004B956A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,8 +161,17 @@
 				1F3E2CD42465887D00C4062F /* No2 */,
 				1F3E2CE2246588F900C4062F /* Class1No2 */,
 				1F42AA64248B6BC400705A0E /* game */,
+				1FFA5C112494A9B80084EDA3 /* Typing Game */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1FFA5C122494A9B80084EDA3 /* Typing Game */ = {
+			isa = PBXGroup;
+			children = (
+				1FFA5C132494A9B80084EDA3 /* main.cpp */,
+			);
+			path = "Typing Game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +262,23 @@
 			productReference = 1F95601D24642C25004B956A /* Self_Aught */;
 			productType = "com.apple.product-type.tool";
 		};
+		1FFA5C102494A9B80084EDA3 /* Typing Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FFA5C172494A9B80084EDA3 /* Build configuration list for PBXNativeTarget "Typing Game" */;
+			buildPhases = (
+				1FFA5C0D2494A9B80084EDA3 /* Sources */,
+				1FFA5C0E2494A9B80084EDA3 /* Frameworks */,
+				1FFA5C0F2494A9B80084EDA3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Typing Game";
+			productName = "Typing Game";
+			productReference = 1FFA5C112494A9B80084EDA3 /* Typing Game */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,6 +303,9 @@
 					1F95601C24642C25004B956A = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					1FFA5C102494A9B80084EDA3 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = 1F95601824642C25004B956A /* Build configuration list for PBXProject "Self_Aught" */;
@@ -277,6 +326,7 @@
 				1F3E2CD32465887D00C4062F /* No2 */,
 				1F3E2CE1246588F900C4062F /* Class1No2 */,
 				1F42AA63248B6BC400705A0E /* game */,
+				1FFA5C102494A9B80084EDA3 /* Typing Game */,
 			);
 		};
 /* End PBXProject section */
@@ -316,6 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FFA5C0D2494A9B80084EDA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFA5C142494A9B80084EDA3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +569,22 @@
 			};
 			name = Release;
 		};
+		1FFA5C152494A9B80084EDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FFA5C162494A9B80084EDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -564,6 +638,15 @@
 			buildConfigurations = (
 				1F95602524642C25004B956A /* Debug */,
 				1F95602624642C25004B956A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FFA5C172494A9B80084EDA3 /* Build configuration list for PBXNativeTarget "Typing Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFA5C152494A9B80084EDA3 /* Debug */,
+				1FFA5C162494A9B80084EDA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

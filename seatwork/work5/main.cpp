@@ -110,7 +110,13 @@ int main() {
 //    }
 //    cout << endl;
 //-----------------------------------
-    
+    int a;
+    cin >> a;
+    for (int b = 1;b<=a;b++){
+        for (int c=1;c<=b;c++) {
+            cout << c << " ";
+        }cout << endl;
+    }
     
     return 0;
 }

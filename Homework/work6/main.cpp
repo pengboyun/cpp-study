@@ -22,7 +22,7 @@ void OneQ(){
         if (small > n1)
             small = n1;
     }
-    printf("%d %d %.3f\n",small,big,b/num);
+    printf("%d %d %.3f\n",small,big,b/num)
 }
     
 //------------------------------
