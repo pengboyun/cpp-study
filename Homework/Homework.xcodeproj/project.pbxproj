@@ -178,6 +178,7 @@
 		1F3AC05D24CD3E25007A5282 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F3AC06624CED28C007A5282 /* work17 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = work17; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3AC06824CED28C007A5282 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1F3AC06D24CF2826007A5282 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1F42AA6F248C771F00705A0E /* work6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = work6; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F42AA71248C771F00705A0E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F42AA77248CFC6400705A0E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -350,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				1F3AC06824CED28C007A5282 /* main.cpp */,
+				1F3AC06D24CF2826007A5282 /* README.md */,
 			);
 			path = work17;
 			sourceTree = "<group>";
