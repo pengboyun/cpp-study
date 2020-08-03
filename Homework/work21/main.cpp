@@ -18,12 +18,10 @@ void OneQ(){
     long len = strlen(a);
     for (int i = 0; i < len; i++)
         a1[i] = a[i] - 48;
-    
     for (long i = len-1, j = 0; i >= 0; i--,j++){
         c1[j] = a1[i] * 5 + x;
         x = c1[j]/10;
         c1[j] = c1[j] % 10;
-        printf("%d * 5 = %d _ %d\n",a1[i],x,c1[j]);
     }
     if (x > 0) {
         c1[len] = x;
@@ -68,6 +66,6 @@ void TwoQ(){
 }
 //-----------------------------
 int main() {
-    //OneQ();
-    TwoQ();
+    OneQ();
+    //TwoQ();
 }

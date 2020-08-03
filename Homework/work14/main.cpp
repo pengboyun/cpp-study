@@ -87,12 +87,41 @@ void FourQ(){
 }
 //---------------------------------------
 void FiveQ(){
+    char a[14];
+    int m=0,j=1;
+    for(int i=0;i<13;i++){
+        cin >> a[i];
+        if(i<11){
+            if(a[i]!= '-'){
+                m+=(a[i]-48)*j++;
+            }
+        }
+    }
+    m=m%11;
+    if(m==10){
+        if(a[12]=='X')
+            cout<<"Right"<<endl;
+        else{
+            a[12]='X';
+            a[13]='\0';
+            cout<<a;
+        }
+    }
+    else if(m==(a[12]-48)){
+        cout<<"Right"<<endl;
+        
+    }
+    else{
+        a[12]=m+48;
+        a[13]='\0';
+        cout<<a<<endl;
+    }
 
 }
 int main() {
     //OneQ();
     //TwoQ();
     //ThreeQ();
-    FourQ();
-    //FiveQ();
+    //FourQ();
+    FiveQ();
 }
