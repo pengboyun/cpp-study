@@ -51,19 +51,14 @@ void Title3(){
     cout << temp << endl;
 }
 void Title4(){
-    int n;
+    int n,num = 0;
     cin >> n;
-    int h = 0,l = 1 , i , sum = 0;
-    for(i = 1;i <= n;i += l){
-        sum += l * (i - h);
-        l++;
-        h = i;
+    while (n){
+        num = num * 10 + n % 10;
+        n = n / 10;
     }
-    if(i != n)
-        sum += (n - h) * l;
-    cout << sum << endl;
+    cout << num << endl;
 }
-
 //-----------------------------z
 void Title5(){
     int work,test,exam;
@@ -72,13 +67,17 @@ void Title5(){
 }
 //-------------------------------
 void Title6(){
-    int n,num = 0;
+    int n;
     cin >> n;
-    while (n){
-        num = num * 10 + n % 10;
-        n = n / 10;
+    int l = 1 , i , sum = 0;
+    for(i = 1;i <= n;i += l){
+        sum += l * l; // 当前可领金币 l * l
+        l++;
+        printf("i=%d l=%d sum=%d \n",i,l,sum);
     }
-    cout << num << endl;
+    if(i != n)
+        sum += (n - i + l) * l;
+    cout << sum << endl;
 }
 void Title7(){
     string in;
@@ -103,10 +102,10 @@ void Title8(){
 int main() {
     //Title1();
     //Title2();
-    Title3();
+    //Title3();
     //Title4();
     //Title5();
-    //Title6();
+    Title6();
     //Title7();
     //Title8();
 }
