@@ -385,6 +385,9 @@
 		1F95600C245D6D93004B956A /* work3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = work3; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F95600E245D6D93004B956A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F956013245EA884004B956A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FB3E885251E26CA00E5A567 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FB3E886251E289E00E5A567 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FB3E887251E2A0400E5A567 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1FC48B0324D847E9005E9AFB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1FC48B0824D8E9FF005E9AFB /* work23 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = work23; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC48B0A24D8E9FF005E9AFB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -756,6 +759,7 @@
 			isa = PBXGroup;
 			children = (
 				1F5D998625048A8B004FE6DE /* main.cpp */,
+				1FB3E887251E2A0400E5A567 /* README.md */,
 			);
 			path = work24;
 			sourceTree = "<group>";
@@ -764,6 +768,7 @@
 			isa = PBXGroup;
 			children = (
 				1F5D9991250C56DA004FE6DE /* main.cpp */,
+				1FB3E886251E289E00E5A567 /* README.md */,
 			);
 			path = work25;
 			sourceTree = "<group>";
@@ -772,6 +777,7 @@
 			isa = PBXGroup;
 			children = (
 				1F5D999C251A0A4A004FE6DE /* main.cpp */,
+				1FB3E885251E26CA00E5A567 /* README.md */,
 			);
 			path = work26;
 			sourceTree = "<group>";
