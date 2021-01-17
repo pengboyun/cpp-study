@@ -11,19 +11,15 @@
 using namespace std;
 
 void OneQ(){
-    int sum,big,arr[10],small;
-    for (int i = 0; i < 10; i++){
-        cin >> arr[i];
+ int i=1,j,t,temp;
+    cin >> temp;
+    for(;i <= temp;i++){
+        for(j = 1;j <= i;j++){
+            t = j * i;
+            cout << j << "*" <<i<< "=" << t << "  ";
+        }
+        cout << endl;
     }
-    big = small = sum = arr[0];
-    for (int i = 1; i < 10; i++) {
-        if (big < arr[i])
-            big = arr[i];
-        if (small > arr[i])
-            small = arr[i];
-        sum += arr[i];
-    }
-    printf("最高分：%d 最低分:%d\n平均分:%.2f\n",big,small,(sum-big-small)/8.);
 }
     
 //------------------------------
@@ -84,9 +80,9 @@ void FiveQ(){
 }
 //---------------------------------------
 int main() {
-    //OneQ();
-    //TwoQ();
-    //ThreeQ();
-    //FourQ();
+    OneQ();
+    TwoQ();
+    ThreeQ();
+    FourQ();
     FiveQ();
 }

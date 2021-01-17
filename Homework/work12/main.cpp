@@ -74,7 +74,17 @@ void ThreeQ(){
 }
 //-----------------------------
 void FourQ(){
-
+    char a[101];
+    int b=0;
+    cin.getline(a,101);
+    int len = strlen(a);
+    for(int i = 0;i < len;i++){
+        if(i <= 'A' && i <= 'Z'){
+            b++;
+        }else if (i >= 'a' && i <= 'Z'){
+            b++;
+        }
+    }
 }
 //-------------------------------
 void FiveQ(){
@@ -82,10 +92,10 @@ void FiveQ(){
 }
 //---------------------------------------
 int main() {
-    OneQ();
+    //OneQ();
     //TwoQ();
     //ThreeQ();
-    //FourQ();
+    FourQ();
     //FiveQ();
 }
 

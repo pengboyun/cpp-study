@@ -10,29 +10,20 @@
 #include <iomanip>
 using namespace std;
 //------------------------------
-void Title1(){
-    int a,b,s,max=0,day=0;
-    for (int i = 1;i < 8;i++){
-        cin >> a >> b;
-        s = a + b;
-        if ((s > max)&&(s > 8)){
-            max=s;
-            day=i;
-        }
-    }
-    cout << day << endl;
-}
-void Title2(){
-    int b=0,n,a[11];
-    for(int i = 1;i <= 10;i++)
-        cin >> a[i];
-    cin >> n;
-    n = n + 30;
-    for(int i = 1;i <= 10;i++){
-       if(n >= a[i])
-         b++;
-    }
-    cout<<b<<endl;
+void buy(){
+    int num;
+    int t1,t2;
+    int s1,s2;
+    int fi,f2;
+    cin >> num;
+    cin >> t1 >> t2 >> s1 >> s2 >> f1 >> f2;
+    int a = num % t1 == 0 ? (num/t1) * t2:(num / t1 + 1) * t2;
+    int b = num % s1 == 0 ? (num/s1) * t2:(num / s1 + 1) * s2;
+    int c = num % f1 == 0 ? (num/f1) * f2:(num / f1 + 1) * f2;
+    cout << a << " " << b << " " << c << endl;
+    int minn = a<b?a:b;
+    cout << minn << endl;
+        
 }
 //------------------------------
 void Title3(){
@@ -60,10 +51,9 @@ void Title4(){
     cout << num << endl;
 }
 //-----------------------------z
+bool
 void Title5(){
-    int work,test,exam;
-    cin >> work >> test >> exam;
-    cout << work * 0.2 + test * 0.3 + exam * 0.5 << endl;
+    
 }
 //-------------------------------
 void Title6(){
