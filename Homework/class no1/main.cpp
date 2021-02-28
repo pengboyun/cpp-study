@@ -9,17 +9,12 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int N,big=0,maxi=0;
-    cin >> N;
-    int arr[N];
-    string name[N];
-    for (int i = 0; i < 4; i++) {
-        cin >> arr[i] >> name[i];
-        if(big < arr[i]){
-            big = arr[i];
-            maxi = i;
-        }
+    int a;
+    int a1[9][9];
+    cin >> a;
+    for (int i = 0; i <= a; i++) {
+        <#statements#>
     }
-    cout << name[maxi] << endl;
     return 0;
 }
+
