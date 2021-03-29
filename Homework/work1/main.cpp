@@ -11,11 +11,8 @@
 using namespace std;
 
 void FirstQuestion(){
-    int a,b,c;
-    cout<<"第一题"<<endl<<"请输入三个数：";
-    cin>>a>>b>>c;
-    cout<<a*b*c<<"  ";
-    cout<<pow(a, 3)+pow(b, 3)+pow(c, 3)<<endl;
+    cout << ;
+    printf("%d",1);
 }
 
 void SecondQuestinon(){
