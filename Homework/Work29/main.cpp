@@ -1,3 +1,4 @@
+#————————————————————————————————
 #include<iostream>
 #include<algorithm>
 #define maxn 101
@@ -30,3 +31,4 @@ int main(){
         cout << a[i] <<' ';
     return 0;
 }
+
