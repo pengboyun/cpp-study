@@ -1,34 +1,25 @@
-#————————————————————————————————
 #include<iostream>
-#include<algorithm>
-#define maxn 101
 using namespace std;
-int a[maxn];
-void qsort(int left,int right){
-    if(left>=right)
-        return ;
-    int x=a[left],i=left,j=right;
-    while(i < j){
-        while(i<j && a[j]>=x)
-            j--;
-        a[i] = a[j];
-        while(i<j && a[i]<=x)
-            i++;
-        a[j] = a[i];
-    }
-    a[i] = x;
-    qsort(left,i-1);
-    qsort(i+1,right);
-}
+
 
 int main(){
-    int i,j,n;
-    cin>>n;
-    for(i=1;i<=n;i++)
-        cin >> a[i];
-    qsort(1,n);
-    for(i=1;i<=n;i++)
-        cout << a[i] <<' ';
-    return 0;
-}
+    char a[1000]={},b[1000]={};
+    int a1[1000]={},b1[1000]={},c1[1000]={};
+    cin >> a >> b;
+    long lena=strlen(a),lenb=strlen(b);
+    long len = (lena > lenb?lena:lenb);
+    
+    for(int i = 0;i < lena;i++)
+        a1[i] = a[lena - 1 - i]-48;
+    
+    for(int i = 0;i < lenb;i++)
+        b1[i] = b[lenb - 1 -i]-48;
+    
+    for (int i = 0;i<len;i++)
+        c1[i] = b1[i] + a1[i];
+    
+    
+    for (int i = 0; i < len; i++)
+        printf("%d",c1[len - 1 - i]);
+    printf("\n");}
 
